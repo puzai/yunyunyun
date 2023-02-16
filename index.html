@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/aui.css" rel="stylesheet">
+    <link rel="icon" href="image/yunyun.ico" />
+    <title>云晕晕的歌单</title>
+</head>
+
+<body style="background-color: rgb(220, 232, 250);" class="antialiased">
+    <div class="wrapper">
+        <div class="page-wrapper">
+            <div class="page-body">
+                <div class="container-xl">
+                    <div class="row row-cards row-deck">
+
+                        <div class="col-lg-12">
+                            <div class="card mt-3"
+                                style="background-color: rgb(255,255,255); border-radius: 16px; color: rgb(128,128,128); box-shadow: 1px 1px 2px #666;">
+                                <div class="search p-2 card-header" onkeyup="searchByName()">
+                                    <div class="d-md-flex">
+                                        <input id="songName" type="text" class="form-control" placeholder="搜索歌名/歌手" />
+                                        <button class="btn btn-default text-nowrap" onclick="randomSong()"
+                                            title="随机复制下方歌单中歌曲点歌弹幕（搜索时仅限搜索结果）">随机点歌</button>
+                                    </div>
+                                </div>
+
+                                <div class="card-body" style="text-indent: 1em;">
+                                    <ul id="songList" class="list-group list-group-flush">
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/js/bootstrap.min.js"></script>
+    <script src="js/songs.js"></script>
+    <script src="js/func.js"></script>
+    <script src="js/aui-toast.js"></script>
+</body>
+
+</html>
