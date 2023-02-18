@@ -1,5 +1,5 @@
 function openTV() {
-    window.open("https://live.bilibili.com/1785182");
+    window.open("https://live.bilibili.com/24032025");
 }
 
 function searchByName() {
